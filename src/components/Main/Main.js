@@ -144,6 +144,7 @@ const dateFormatter = (item) => moment(item).format("MMM YY");
     getInvestmentData(investments)
   }, [])
 
+  if(!cbData.cb_investments) return <h2>loading...</h2>
   return (
     <div style={{ backgroundColor: '#27364d',
         height: 'auto',
